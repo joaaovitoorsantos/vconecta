@@ -229,9 +229,39 @@ body {
     display: none;
 }
 
-.label-page-mobile {
+.form-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-mobile {
     display: none;
 }
+
+.img-form {
+    width: 756px;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url('./assets/gabriel-santos-GBVDilE8yvI-unsplash\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-form {
+    margin-top: 16px;
+    font-weight: 800;
+    font-size: 28px;
+    color: #654E4E;
+}
+
+.subtitle-form {
+    margin-top: 58px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #AF2C52;
+}
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -370,5 +400,25 @@ body {
         font-weight: 600;
         font-size: 16px;
         user-select: none;
+        margin-bottom: 24px;
+    }
+
+    .form-desktop {
+        display: none;
+    }
+
+    .form-mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .subtitle-form {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .title-form {
+        font-size: 24px;
+        width: 342px;
     }
 }
